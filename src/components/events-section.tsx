@@ -61,12 +61,12 @@ export function EventsSection() {
     <section className="py-20 relative">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <Badge variant="secondary" className="mb-4 glass font-cyber">
+          <Badge variant="secondary" className="mb-4 glass font-professional">
             <Calendar className="w-4 h-4 mr-2" />
             Upcoming Events
           </Badge>
           <h2 className="font-display text-4xl md:text-6xl font-bold mb-6">
-            <span className="neon-text">Events</span> & <span className="neon-purple">Competitions</span>
+            <span className="professional-accent">Events</span> & <span className="professional-secondary">Competitions</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-body">
             Join our exciting events, hackathons, and workshops designed to enhance your skills 
@@ -119,7 +119,7 @@ export function EventsSection() {
                 </div>
 
                 <div className="flex justify-between items-center">
-                  <Button variant="cyber" size="sm" className="group">
+                  <Button variant="professional" size="sm" className="group">
                     Learn More
                     <Trophy className="ml-2 w-4 h-4 group-hover:rotate-12 transition-transform" />
                   </Button>
@@ -133,7 +133,7 @@ export function EventsSection() {
         </div>
 
         <div className="text-center mt-12">
-          <Button variant="ghost-cyber" size="lg">
+          <Button variant="outline-professional" size="lg">
             View All Events
           </Button>
         </div>

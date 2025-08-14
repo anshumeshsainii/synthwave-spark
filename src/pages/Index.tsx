@@ -1,6 +1,5 @@
 "use client"
 
-import { CustomCursor } from '@/components/ui/cursor'
 import { ParticleBackground } from '@/components/ui/particles'
 import { Navigation } from '@/components/navigation'
 import { HeroSection } from '@/components/hero-section'
@@ -11,7 +10,6 @@ import { Footer } from '@/components/footer'
 const Index = () => {
   return (
     <div className="min-h-screen bg-background relative">
-      <CustomCursor />
       <ParticleBackground />
       <Navigation />
       

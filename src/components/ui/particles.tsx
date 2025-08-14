@@ -23,7 +23,7 @@ export function ParticleBackground() {
     if (!ctx) return
 
     const particles: Particle[] = []
-    const particleCount = 80
+    const particleCount = 30
 
     const resizeCanvas = () => {
       canvas.width = window.innerWidth
@@ -33,11 +33,11 @@ export function ParticleBackground() {
     const createParticle = (): Particle => ({
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
-      dx: (Math.random() - 0.5) * 0.5,
-      dy: (Math.random() - 0.5) * 0.5,
-      size: Math.random() * 2 + 1,
-      opacity: Math.random() * 0.5 + 0.2,
-      hue: Math.random() * 60 + 180 // Blue to cyan range
+      dx: (Math.random() - 0.5) * 0.3,
+      dy: (Math.random() - 0.5) * 0.3,
+      size: Math.random() * 1.5 + 0.5,
+      opacity: Math.random() * 0.3 + 0.1,
+      hue: Math.random() * 60 + 200 // Blue range
     })
 
     // Initialize particles
@@ -71,12 +71,12 @@ export function ParticleBackground() {
           const dy = particle.y - otherParticle.y
           const distance = Math.sqrt(dx * dx + dy * dy)
 
-          if (distance < 100) {
+          if (distance < 120) {
             ctx.beginPath()
             ctx.moveTo(particle.x, particle.y)
             ctx.lineTo(otherParticle.x, otherParticle.y)
-            ctx.strokeStyle = `hsla(${particle.hue}, 100%, 50%, ${0.1 * (1 - distance / 100)})`
-            ctx.lineWidth = 0.5
+            ctx.strokeStyle = `hsla(${particle.hue}, 60%, 60%, ${0.06 * (1 - distance / 120)})`
+            ctx.lineWidth = 0.3
             ctx.stroke()
           }
         })

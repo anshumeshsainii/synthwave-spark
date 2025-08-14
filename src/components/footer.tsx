@@ -88,7 +88,7 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-            <Button variant="ghost-cyber" size="sm" className="mt-4 w-full">
+            <Button variant="outline-professional" size="sm" className="mt-4 w-full">
               View All Events
             </Button>
           </div>
@@ -119,7 +119,7 @@ export function Footer() {
                 <span className="font-body text-sm text-muted-foreground">+1 (555) 123-4567</span>
               </div>
             </div>
-            <Button variant="cyber" size="sm" className="mt-4 w-full">
+            <Button variant="professional" size="sm" className="mt-4 w-full">
               <Mail className="w-4 h-4 mr-2" />
               Contact Us
             </Button>

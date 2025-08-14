@@ -37,8 +37,8 @@ export function Navigation() {
             <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-sm">C</span>
             </div>
-            <span className="font-cyber text-xl font-bold neon-text">CSED</span>
-            <Badge variant="outline" className="hidden sm:inline-flex font-cyber text-xs">
+            <span className="font-heading text-xl font-bold professional-accent">CSED</span>
+            <Badge variant="outline" className="hidden sm:inline-flex font-professional text-xs">
               v2.0
             </Badge>
           </div>
@@ -49,7 +49,7 @@ export function Navigation() {
               <a
                 key={item.name}
                 href={item.href}
-                className="flex items-center space-x-2 text-muted-foreground hover:text-cyber-primary transition-colors duration-300 font-body"
+                className="flex items-center space-x-2 text-muted-foreground hover:text-primary transition-colors duration-300 font-body"
               >
                 {item.icon}
                 <span>{item.name}</span>
@@ -59,11 +59,11 @@ export function Navigation() {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost-cyber" size="sm">
+            <Button variant="outline-professional" size="sm">
               <MessageCircle className="w-4 h-4 mr-2" />
               Contact Us
             </Button>
-            <Button variant="cyber" size="sm">
+            <Button variant="professional" size="sm">
               Join Now
             </Button>
           </div>
@@ -93,11 +93,11 @@ export function Navigation() {
                 </a>
               ))}
               <div className="pt-4 space-y-2">
-                <Button variant="ghost-cyber" size="sm" className="w-full">
+                <Button variant="outline-professional" size="sm" className="w-full">
                   <MessageCircle className="w-4 h-4 mr-2" />
                   Contact Us
                 </Button>
-                <Button variant="cyber" size="sm" className="w-full">
+                <Button variant="professional" size="sm" className="w-full">
                   Join Now
                 </Button>
               </div>
